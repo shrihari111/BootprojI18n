@@ -13,6 +13,7 @@ public class CustomerOperationsController
 	@GetMapping("/")
 	public String showhomePage()
 	{
+		System.out.println("CustomerOperationsController.showhomePage()");
 		// return LVN
 		return "welcome";
 	}
@@ -20,7 +21,7 @@ public class CustomerOperationsController
 	@GetMapping("/register")
 	public String customerRegistrationPage(@ModelAttribute("cust") Customer cust)
 	{
-		
+		System.out.println("CustomerOperationsController.customerRegistrationPage()");
 		// return LVN
 		return "cust_register";
 		
